@@ -2,7 +2,7 @@ import pytest
 import src.exercise
 
 def test_exercise():
-    input_values = ["once upon a time","a little program","halted"]
+    input_values = ["once upon a time","a little program","halted",""]
     output = []
 
     def mock_input(s=None):
@@ -18,4 +18,4 @@ def test_exercise():
 
     src.exercise.main()
 
-    assert output == ["","once","upon","a","time","","a","little","program","","halted"]
+    assert output == ["","once","upon","a","time","","a","little","program","","halted",""]
